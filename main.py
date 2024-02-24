@@ -6,3 +6,4 @@ steam = Steam(KEY)
 
 user = steam.users.search_user("the12thchairman")
 print(user)
+#I FUCKING HATE SATURDAYS
