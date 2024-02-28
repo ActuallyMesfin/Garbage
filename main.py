@@ -8,10 +8,11 @@ window.geometry("500x500")
 
 
 username = Entry(window, width=50)
+print(username)
 username.pack()
 
 def printinfo():
-    user = steam.users.search_user("the12thchairman")
+    user = steam.users.search_user(username)
     label = Label(window, text=user)
     label.pack()
 
