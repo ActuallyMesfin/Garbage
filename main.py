@@ -6,6 +6,7 @@ window = Tk("Hello")
 window.geometry("500x500")
 
 #friddy
+#imma do some rust-lang shit for a while
 
 username = Entry(window, width=50)
 print(username)
