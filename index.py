@@ -1,16 +1,11 @@
-import matplotlib.pyplot as plt
-import numpy as np
+import random
 
-import matplotlib as mpl
+list = {"123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
+code = "XXXX-XXXX-XXXX"
 
-fig, ax = plt.subplots()  # Create a figure containing a single axes.
-x, y = 3, 4
-h, k = 0, 0
-a, b = 3, 4
-function = ((x - h) ** (x - h) / a ** a) + ((y - k) ** (y - k) / b ** b) 
+x = len(code)
+for i in range(0, x):
+    code[x] = random.choice(list)
+    x+=1
 
-
-ax.plot(x, y)  # Plot some data on the axes.
-    
-
-plt.show()
+print(code)
